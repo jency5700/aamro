@@ -65,7 +65,7 @@ CodeBehind="ManageUsers.aspx.cs" Inherits="AAMRO_CRM.Modules.ManageUsers" %>
         <td colspan ="2">
             <asp:RegularExpressionValidator ID="EmailVal" runat="server" ForeColor="Red" Font-Size="Medium"
                 ErrorMessage="Invalid Email" 
-                ValidationExpression="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,6}$" 
+                ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" 
                 ControlToValidate="txtEmail"></asp:RegularExpressionValidator>
         </td>
         </tr>

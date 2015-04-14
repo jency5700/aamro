@@ -112,6 +112,8 @@ namespace AAMRO_CRM.Modules
                 cmd.Connection.Close();
                 Grid.EditItemIndex = -1;
                 BindData();
+
+                Master.MasterMessageText = "User details deleted successfully";
             }
             catch (Exception ex)
             {
@@ -139,6 +141,8 @@ namespace AAMRO_CRM.Modules
                 cmd.Connection.Close();
                 Grid.EditItemIndex = -1;
                 BindData();
+
+                Master.MasterMessageText = "User details updated successfully";
             }
             catch (Exception ex)
             {
