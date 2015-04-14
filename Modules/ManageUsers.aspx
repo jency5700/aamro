@@ -96,11 +96,11 @@ OnDeleteCommand="Grid_DeleteCommand" OnEditCommand="Grid_EditCommand" OnUpdateCo
         <asp:TextBox ID="txtUserName" runat="server"
           Text='<%# Bind("UserName") %>'>
         </asp:TextBox>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator1"
+        <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator1"
             runat="server" ControlToValidate="txtUserName"
-            ErrorMessage="User name cannot be blank"
-            ValidationGroup="EditValidationControls">*
-        </asp:RequiredFieldValidator>
+            ErrorMessage="User name cannot be blank" ForeColor="Red"
+            ValidationGroup="EditValidationControls">
+        </asp:RequiredFieldValidator>--%>
     </EditItemTemplate>
     <ItemTemplate>
         <asp:Label ID="lblUserName" runat="server"
@@ -149,11 +149,11 @@ DataTextField="Role" DataValueField = "RoleId">
         <asp:TextBox ID="txtEmail" runat="server"
           Text='<%# Bind("Email") %>'>
         </asp:TextBox>
-        <asp:RegularExpressionValidator ID="RequiredFieldValidator1"
-            runat="server" ControlToValidate="txtEmail"
+        <%--<asp:RegularExpressionValidator ID="RegularExpressionValidator1"
+            runat="server" ControlToValidate="txtEmail" ForeColor="Red"
             ErrorMessage="Invalid Email" ValidationExpression="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,6}$"
             ValidationGroup="EditValidationControls">
-        </asp:RegularExpressionValidator>
+        </asp:RegularExpressionValidator>--%>
     </EditItemTemplate>
     <ItemTemplate>
         <asp:Label ID="lblEmail" runat="server"
@@ -162,7 +162,7 @@ DataTextField="Role" DataValueField = "RoleId">
 </asp:TemplateColumn>
 
 
-<asp:EditCommandColumn EditText="Edit" CancelText="Cancel" UpdateText="Update" HeaderText="Edit">
+<asp:EditCommandColumn EditText="Edit" CancelText="Cancel" UpdateText="Update" HeaderText="Edit" ValidationGroup = "EditValidationControls">
 </asp:EditCommandColumn>
 <asp:ButtonColumn CommandName="Delete" HeaderText="Delete" Text="Delete">
 </asp:ButtonColumn>
