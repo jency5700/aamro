@@ -1,0 +1,112 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Aamro.master.cs" Inherits="AAMRO_CRM.Aamro" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>    
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    <h1 style="height:50px;"></h1></asp:ContentPlaceHolder>
+    <link href="~/Styles/Site.css?" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+        .style2
+        {
+            width: 100%;
+            height: 100%;
+        }
+        .style3
+        {
+            width: 307px;
+        }
+        .style4
+        {
+            float: left;
+            text-align: center;
+            width: 100%;
+            color: White;
+        }
+        .style7
+        {
+            text-align: left;
+            width: 80%;
+            color: White;
+            height: 20px;
+        }
+        .style8
+        {
+            text-align: right;
+            width: 10%;
+            color: White;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div >
+        <table class="header" style="height:100%;width:100%">
+            <tr><td >
+            <table style="width: 100%"><tr>
+                <td class="style7">   &nbsp;&nbsp;&nbsp;&nbsp;   Aamro Freight - The Art of Logistics Redefined and Simplified</td>
+                <td class="style8"  colspan="2">                    
+                       <asp:Label Font-Bold="False" ID="lblWelcomeTitle" runat="server"></asp:Label>
+                    </td>
+                 </tr>
+                 <tr>
+                <td class="style7">
+                     </td>
+                <td class="style8"><a href="Home.aspx">Home</a></td>
+                <td class="style8"><a href="Login.aspx">Log Out</a></td>
+                 </tr></table></td>
+            </tr>
+           
+            <tr>
+                <td>
+                    <table  id = "mastertab" class="style2">
+                    <tr>
+                    <td></td>                    
+                            <td style="vertical-align:top;height:25px" bgcolor="#D5D5F7">   
+                                 <asp:ContentPlaceHolder ID="MessageContent" runat="server">
+                                 <asp:Label Font-Bold="False" ID="lblMessage" runat="server" ForeColor="#CC0000"
+                                         style="font-size: medium"></asp:Label>
+                                    </asp:ContentPlaceHolder>                                    
+                            </td>
+                    </tr>
+                    <tr>
+                    <td></td>                    
+                            <td style="vertical-align:top" bgcolor="#D5D5F7">                                
+                                 <asp:ContentPlaceHolder ID="TitleContent" runat="server">
+                                 <asp:Label Font-Bold="True" ID="lblMasterTitle" runat="server" ForeColor="#0066CC" 
+                                         style="font-size: large"></asp:Label>
+                                    </asp:ContentPlaceHolder>                                    
+                            </td>
+                    </tr>
+                        <tr>
+                            <td class="style3">
+                                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" Width= "100%" EnableViewState="false" IncludeStyleBlock="false" Orientation="Vertical">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Modules/ManageUsers.aspx" Text="Manage Users"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Modules/ManageCustomers.aspx" Text="Manage Customers"/>
+                        <asp:MenuItem NavigateUrl="~/Modules/FreightForwarding.aspx" Text="Freight Forwarding"/>
+                        <asp:MenuItem NavigateUrl="~/Modules/ShipmentTracking.aspx" Text="Shipment Tracking"/>
+                    </Items>
+                </asp:Menu>&nbsp;</td>
+                            <td style="vertical-align:top;border-width:thin;border-color:Blue;border-style:solid" bgcolor="#D5D5F7"> 
+                                 <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                                 Page under construction
+                                    </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="style4">To know more about AAMRO visit <a href="http://www.aamrofreight.com/" 
+                        title="AAMRO Website">www.aamrofreight.com</a>.</td>
+            </tr>
+        </table>
+
+    </div>
+    </form>
+</body>
+</html>

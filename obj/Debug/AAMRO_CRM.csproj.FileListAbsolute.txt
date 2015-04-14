@@ -1,0 +1,4 @@
+c:\users\user\documents\visual studio 2010\Projects\AAMRO_CRM\AAMRO_CRM\bin\AAMRO_CRM.dll
+c:\users\user\documents\visual studio 2010\Projects\AAMRO_CRM\AAMRO_CRM\bin\AAMRO_CRM.pdb
+c:\users\user\documents\visual studio 2010\Projects\AAMRO_CRM\AAMRO_CRM\obj\Debug\AAMRO_CRM.dll
+c:\users\user\documents\visual studio 2010\Projects\AAMRO_CRM\AAMRO_CRM\obj\Debug\AAMRO_CRM.pdb
