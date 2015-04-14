@@ -55,8 +55,8 @@
                  <tr>
                 <td class="style7">
                      </td>
-                <td class="style8"><a href="Home.aspx">Home</a></td>
-                <td class="style8"><a href="Login.aspx">Log Out</a></td>
+                <td class="style8"><a href="Home.aspx" style="color: #99CCFF">Home</a></td>
+                <td class="style8"><a href="Login.aspx" style="color: #99CCFF">Log Out</a></td>
                  </tr></table></td>
             </tr>
            
@@ -101,8 +101,8 @@
                 </td>
             </tr>
             <tr>
-                <td class="style4">To know more about AAMRO visit <a href="http://www.aamrofreight.com/" 
-                        title="AAMRO Website">www.aamrofreight.com</a>.</td>
+                <td class="style4">To know more about AAMRO visit <a href="http://www.aamrofreight.com/"  style="color: #99CCFF"
+                        title="AAMRO Website">www.aamrofreight.com</a></td>
             </tr>
         </table>
 

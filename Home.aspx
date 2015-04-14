@@ -6,7 +6,7 @@
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent"> 
     <h1 style="height:50px;">
-        Welcome to AMMRO!
+        Welcome to AAMRO!
     </h1>
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
